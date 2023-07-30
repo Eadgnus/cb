@@ -15,7 +15,7 @@ parser.add_argument("-b", "--num-beams", type=int, default=5)
 '''
 
 # 모델 경로 위치 잡기
-model = GPT2LMHeadModel.from_pretrained("sangdal/ChatBot")
+model = GPT2LMHeadModel.from_pretrained("sangdal/ChatBot", torch_device='cpu')
 
 
 # tokenizer폴더 경로위치 잡기
